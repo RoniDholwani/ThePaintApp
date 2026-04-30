@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512.000000dp"
+    android:height="512.000000dp"
+    android:viewportWidth="512.000000"
+    android:viewportHeight="512.000000">
+
+    <group
+        android:translateY="512.000000"
+        android:scaleX="0.100000"
+        android:scaleY="-0.100000">
+        <path
+            android:fillColor="#2196F3"
+            android:strokeWidth="1"
+            android:pathData="M4551 4757 c-45 -19 -173 -132 -815 -726 l-761 -703 260 -259 259 -259 32 32 c18
+18 332 359 698 758 431 468 674 741 688 770 13 26 24 71 26 107 14 212 -191 361
+-387 280z" />
+        <path
+            android:fillColor="#2196F3"
+            android:strokeWidth="1"
+            android:pathData="M2564 2964 c-143 -119 -265 -222 -272 -229 -11 -10 44 -69 298 -323 l311 -310 230
+275 c192 230 229 280 229 306 0 28 -28 59 -233 264 -217 218 -235 233 -268 233 -33
+0 -64 -23 -295 -216z" />
+        <path
+            android:fillColor="#2196F3"
+            android:strokeWidth="1"
+            android:pathData="M1769 2604 c-171 -30 -313 -100 -425 -206 -83 -79 -138 -156 -189 -264 -61 -128
+-89 -243 -130 -540 -69 -501 -313 -804 -646 -804 -51 0 -64 -4 -86 -26 -20 -20 -24
+-31 -19 -57 10 -49 34 -65 161 -108 497 -166 989 -195 1339 -78 422 140 713 445
+866 909 67 201 123 498 106 565 -5 21 -92 115 -291 314 l-283 284 -78 13 c-101 17
+-228 16 -325 -2z" />
+    </group>
+</vector>

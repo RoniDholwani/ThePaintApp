@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".SplashActivity">
+
+    <!-- Animated Color Blobs Background -->
+    <View
+        android:id="@+id/colorBlob1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/splash_color_blob"
+        android:alpha="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-40dp" />
+
+    <View
+        android:id="@+id/colorBlob2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/splash_color_blob2"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginBottom="-30dp" />
+
+    <View
+        android:id="@+id/colorBlob3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/splash_color_blob3"
+        android:alpha="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="-20dp"
+        android:layout_marginBottom="150dp" />
+
+    <View
+        android:id="@+id/colorBlob4"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/splash_color_blob4"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginTop="120dp" />
+
+    <View
+        android:id="@+id/colorBlob5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/splash_color_blob5"
+        android:alpha="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="250dp" />
+
+    <!-- Main Content Container -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_splash_logo"
+            android:contentDescription="App Logo"
+            android:alpha="0"
+            android:scaleType="fitCenter" />
+
+        <!-- App Brand Name -->
+        <TextView
+            android:id="@+id/appTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Art Studio"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"
+            android:visibility="invisible"
+            android:layout_marginTop="16dp"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="8" />
+
+        <!-- Brand Subtitle -->
+        <TextView
+            android:id="@+id/appSubtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creative Paint Studio"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:fontFamily="sans-serif"
+            android:visibility="invisible"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0.1" />
+
+        <!-- Divider Line -->
+        <View
+            android:id="@+id/dividerLine"
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FF5252"
+            android:visibility="invisible" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/taglineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where Creativity Meets Innovation"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:fontFamily="sans-serif"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0.05" />
+
+        <!-- Loading Progress Bar -->
+        <ProgressBar
+            android:id="@+id/loadingProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="40dp"
+            android:alpha="0.6"
+            android:indeterminate="true"
+            android:indeterminateTint="#FF5252"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <!-- Developer Credit Section -->
+    <LinearLayout
+        android:id="@+id/developerCreditLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        android:alpha="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp">
+
+        <TextView
+            android:id="@+id/developerCreditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designed &amp; Developed by"
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:id="@+id/developerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~ Ronit Dholwani"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

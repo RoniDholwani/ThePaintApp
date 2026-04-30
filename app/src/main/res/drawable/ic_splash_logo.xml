@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#FF5252"
+        android:pathData="M60,60m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0" />
+
+    <!-- Paint Palette Shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M45,35 L75,35 C80,35 85,40 85,45 L85,55 L82,55 C78,55 75,58 75,62 C75,66 78,69 82,69 L85,69 L85,80 C85,85 80,90 75,90 L45,90 C40,90 35,85 35,80 L35,45 C35,40 40,35 45,35 Z" />
+
+    <!-- Color dots on palette -->
+    <path
+        android:fillColor="#448AFF"
+        android:pathData="M50,50m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#69F0AE"
+        android:pathData="M65,50m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFD740"
+        android:pathData="M57,65m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+
+    <!-- Brush -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M85,55 L95,45 L100,50 L90,60 Z" />
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M88,58 L92,54 L97,59 L93,63 Z" />
+</vector>
